@@ -1,19 +1,24 @@
-import { useEffect } from "react";
+import { useLayoutEffect, useCallback } from "react";
 
 export const usePostMessageListener = (callback: (data: string) => void) => {
-  useEffect(() => {
-    const listener = (event: MessageEvent) => {
-      callback(event?.data);
-    };
+  const listener = useCallback(
+    (event: MessageEvent) => {
+      callback(event.data);
+    },
+    [callback]
+  );
+  useLayoutEffect(() => {
     window.addEventListener("message", listener);
     return () => {
       window.removeEventListener("message", listener);
     };
-  }, [callback]);
+  }, [listener]);
 };
 
 export const usePostMessageSender = (data: string) => {
-  useEffect(() => {
-    window.opener?.postMessage(data, "*");
+  useLayoutEffect(() => {
+    window.parent.postMessage(data, "*");
   }, [data]);
+
+  return null;
 };
