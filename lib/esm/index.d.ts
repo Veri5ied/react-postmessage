@@ -1,2 +1,1 @@
-export { useGetMessage } from "./useGetMessage";
-export { usePostMessage } from "./usePostMessage";
+export { usePostMessage, useReceiveMessage } from "./usePostMessage";
