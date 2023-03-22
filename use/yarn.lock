@@ -2252,6 +2252,10 @@
     "@typescript-eslint/types" "5.55.0"
     eslint-visitor-keys "^3.3.0"
 
+"@veri5ied/react-postmessage@link:..":
+  version "0.0.0"
+  uid ""
+
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.11.1.tgz#2bfd767eae1a6996f432ff7e8d7fc75679c0b6a7"
@@ -7531,10 +7535,6 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
-
-"react-postmessage@link:..":
-  version "0.0.0"
-  uid ""
 
 react-refresh@^0.11.0:
   version "0.11.0"

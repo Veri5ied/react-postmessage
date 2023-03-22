@@ -1,2 +1,2 @@
-export declare const usePostMessageListener: (callback: (data: string) => void) => void;
-export declare const usePostMessageSender: (data: string) => null;
+export { useGetMessage } from "./useGetMessage";
+export { usePostMessage } from "./usePostMessage";

@@ -1,5 +1,5 @@
-import { Parent } from "./Parent";
-import { Child } from "./Child";
+import Parent from "./Parent";
+import Child from "./Child";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
