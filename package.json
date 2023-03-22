@@ -1,6 +1,6 @@
 {
   "name": "@veri5ied/react-postmessage",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "cross-origin communication with postmessage",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
